@@ -5,7 +5,7 @@
              <h1>{{ $project->title }}</h1>
              @if ($project->image)
                  
-                 <img src="{{ Storage::url($project->image_path) }}" class="img-fluid mb-3" alt="{{ $project->title }}">
+                 <img src="{{ Storage::url($project->image) }}" class="img-fluid mb-3" alt="{{ $project->title }}">
              @endif
              <p>{{ $project->description }}</p>
              <p><small>By {{ $project->user->name }}</small></p>

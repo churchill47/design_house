@@ -29,7 +29,7 @@
         }
         .nav {
             background: rgba(0, 0, 0, 0.4);
-            padding: 1em;
+            padding: 20px;
             position: fixed;
             width: 100%;
             top: 0;
@@ -42,7 +42,7 @@
             padding: 0.5em 1em;
             border: 1px solid #f5e8c7;
             border-color: #ffcc00;
-            border-radius: 5px;
+            border-radius: 20px;
             font-weight: bold;
             transition: background-color 0.3s, color 0.3s;
         }
@@ -65,10 +65,10 @@
                       </x-app-layout>
                   </a>
                     @else
-                    <a href="{{ route('login') }}">Sign up</a>
+                    <a href="{{ route('login') }}">Sign In</a>
 
            @if (Route::has('register'))
-            <a href="{{ route('register') }}">Sign in</a>
+            <a href="{{ route('register') }}">Sign up</a>
                        
                         @endif
                     @endauth

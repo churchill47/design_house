@@ -36,8 +36,7 @@
     $data['user_id'] = Auth::id();
 
     if ($request->hasFile('image')) {
-        // Change the array key from 'image' to 'image_path' to match the database column.
-        $data['image_path'] = $request->file('image')->store('projects', 'public');
+        $data['image'] = $request->file('image')->store('projects', 'public');
     }
 
     // Now, the 'data' array contains the correct key for the database.
